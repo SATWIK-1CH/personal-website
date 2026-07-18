@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Satwik Cheppala — Senior Data Scientist. Production ML in pricing, search, fraud, and marketplace systems at Bolt, Tide, Zepto, and Uber."
+    />
+    <title>Satwik Cheppala — Data Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="profile">
+        <div class="sidebar-inner">
+          <div class="avatar" aria-hidden="true">
+            <!-- Drop a headshot at assets/profile.jpg to replace initials -->
+            <img
+              class="avatar-img"
+              src="assets/profile.jpg"
+              alt=""
+              width="96"
+              height="96"
+              onerror="this.remove()"
+            />
+            <span class="avatar-fallback">SC</span>
+          </div>
+          <h1 class="name">Satwik Cheppala</h1>
+          <p class="title">Senior Data Scientist at Bolt</p>
+          <p class="location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8" />
+            </svg>
+            Based in Tallinn, Estonia
+          </p>
+
+          <div class="social">
+            <a
+              class="social-btn"
+              href="https://github.com/SATWIK-1CH"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.492.998.108-.775.42-1.305.763-1.605-2.665-.303-5.467-1.333-5.467-5.931 0-1.31.468-2.382 1.236-3.222-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.404 1.02.004 2.04.137 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.625-5.48 5.922.431.372.815 1.102.815 2.222 0 1.606-.015 2.902-.015 3.293 0 .32.216.694.825.576C20.565 21.796 24 17.297 24 12 24 5.37 18.627 0 12 0z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social-btn"
+              href="https://www.linkedin.com/in/satwikcheppala/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V23h-4v-6.5c0-1.55-.03-3.55-2.16-3.55-2.16 0-2.5 1.69-2.5 3.43V23h-4V8.5z"
+                />
+              </svg>
+            </a>
+            <a
+              class="social-btn"
+              href="mailto:ch.satwik465@gmail.com"
+              aria-label="Email"
+              title="Email"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="m4 7 8 6 8-6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              class="email-pill"
+              href="mailto:ch.satwik465@gmail.com"
+              >email me</a
+            >
+          </div>
+
+          <div class="sidebar-block">
+            <h2>About</h2>
+            <p>
+              Senior Data Scientist with 5+ years designing and shipping
+              production ML across marketplaces, fintech, and on-demand
+              platforms — pricing, search ranking, fraud decisioning, and supply
+              lifecycle systems at Bolt, Tide, Zepto, and Uber.
+            </p>
+          </div>
+
+          <div class="sidebar-block">
+            <h2>Core skills</h2>
+            <div class="tags" id="skill-tags">
+              <button type="button" class="tag" data-skill="Python">Python</button>
+              <button type="button" class="tag" data-skill="SQL">SQL</button>
+              <button type="button" class="tag" data-skill="XGBoost">XGBoost</button>
+              <button type="button" class="tag" data-skill="Search">Search &amp; Ranking</button>
+              <button type="button" class="tag" data-skill="Pricing">Dynamic Pricing</button>
+              <button type="button" class="tag" data-skill="Fraud">Fraud / Risk</button>
+              <button type="button" class="tag" data-skill="LLMs">LLMs / RAG</button>
+              <button type="button" class="tag" data-skill="Experimentation">Experimentation</button>
+              <button type="button" class="tag" data-skill="MLOps">MLOps</button>
+            </div>
+          </div>
+
+          <a
+            class="resume-link"
+            href="https://github.com/SATWIK-1CH"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="resume-link" href="resume/Satwik_Cheppala_2026_June.pdf" download>
+            Download resume (PDF)
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <nav class="top-nav" aria-label="Sections">
+          <a href="#projects" class="nav-link is-active">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#impact" class="nav-link">Impact</a>
+          <a href="#education" class="nav-link">Education</a>
+          <button type="button" class="mobile-profile-toggle" id="profile-toggle" aria-expanded="false">
+            Profile
+          </button>
+        </nav>
+
+        <section id="impact" class="section impact-section">
+          <h2 class="section-title">Impact at a glance</h2>
+          <div class="stats">
+            <article class="stat">
+              <p class="stat-value"><span data-count="40">0</span>%</p>
+              <p class="stat-label">Price-elasticity error cut at Bolt</p>
+            </article>
+            <article class="stat">
+              <p class="stat-value"><span data-count="20">0</span>%</p>
+              <p class="stat-label">Peak search-to-cart lift at Zepto</p>
+            </article>
+            <article class="stat">
+              <p class="stat-value"><span data-count="40">0</span>%</p>
+              <p class="stat-label">Fraud £-value captured at Tide</p>
+            </article>
+            <article class="stat">
+              <p class="stat-value"><span data-count="86">0</span>%</p>
+              <p class="stat-label">Faster reactivation TAT at Uber</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="section-head">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-sub">
+              Production ML systems I’ve owned end-to-end — filter by topic.
+            </p>
+          </div>
+
+          <div class="filters" role="toolbar" aria-label="Filter projects">
+            <button type="button" class="filter is-active" data-filter="all">All</button>
+            <button type="button" class="filter" data-filter="pricing">Pricing</button>
+            <button type="button" class="filter" data-filter="search">Search</button>
+            <button type="button" class="filter" data-filter="fraud">Fraud</button>
+            <button type="button" class="filter" data-filter="marketplace">Marketplace</button>
+            <button type="button" class="filter" data-filter="rl">RL / Optimization</button>
+          </div>
+
+          <div class="project-grid" id="project-grid">
+            <article
+              class="project"
+              data-tags="pricing marketplace experimentation"
+              tabindex="0"
+            >
+              <div
+                class="project-banner"
+                style="--banner: url('assets/banners/banner-bolt-pricing.png')"
+              >
+                <div class="banner-overlay banner-overlay-pricing"></div>
+                <div class="banner-top">
+                  <img
+                    class="company-logo"
+                    src="assets/logos/bolt.svg"
+                    alt="Bolt"
+                    width="88"
+                    height="30"
+                  />
+                  <span class="theme-chip">Dynamic Pricing</span>
+                </div>
+                <span class="banner-metric">−40% OOS error</span>
+              </div>
+              <div class="project-body">
+                <h3>Offer Dynamic Pricing &amp; Elasticity</h3>
+                <div class="tags compact">
+                  <span class="tag static">XGBoost</span>
+                  <span class="tag static">Elasticity</span>
+                  <span class="tag static">Switchback</span>
+                  <span class="tag static">CUPED</span>
+                </div>
+                <p class="project-summary">
+                  When conversion scores drifted wildly by city, riders saw the
+                  wrong price — and patches per market only hid the problem. I
+                  rebuilt how queue features enter the model so pricing stays
+                  calibrated across 5+ markets.
+                </p>
+                <div class="project-detail" hidden>
+                  <p class="detail-label">Problem</p>
+                  <p>
+                    City-level calibration swung from +39pp to −14pp. Features
+                    that drove ~51% of model importance were skewed between
+                    training and serving, so local hotfixes never held.
+                  </p>
+                  <p class="detail-label">What I built</p>
+                  <ul>
+                    <li>
+                      A single representation fix for driver-queue features in
+                      the Offer Dynamic Pricing conversion model (XGBoost).
+                    </li>
+                    <li>
+                      A city-gated hinge correction on the S2O elasticity
+                      engine, validated against live +20% / +50% experiment
+                      arms.
+                    </li>
+                    <li>
+                      A discount-budget regularizer with per-city dual ascent
+                      after silent production defects hit 2–13% of traffic.
+                    </li>
+                  </ul>
+                  <p class="detail-label">Impact</p>
+                  <p>
+                    Out-of-sample elasticity error fell ~40% (≈5pp → ≈2.5pp) in
+                    gated cities, with rollouts protected by a 3-gate decision
+                    rule.
+                  </p>
+                </div>
+                <button type="button" class="read-more" aria-expanded="false">
+                  Read more <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="project"
+              data-tags="search marketplace rl"
+              tabindex="0"
+            >
+              <div
+                class="project-banner"
+                style="--banner: url('assets/banners/banner-zepto-search.png')"
+              >
+                <div class="banner-overlay banner-overlay-search"></div>
+                <div class="banner-top">
+                  <img
+                    class="company-logo"
+                    src="assets/logos/zepto.svg"
+                    alt="Zepto"
+                    width="88"
+                    height="30"
+                  />
+                  <span class="theme-chip">Search &amp; Ranking</span>
+                </div>
+                <span class="banner-metric">+14–20% cart</span>
+              </div>
+              <div class="project-body">
+                <h3>Learning-to-Rank &amp; Semantic Retrieval</h3>
+                <div class="tags compact">
+                  <span class="tag static">LambdaMART</span>
+                  <span class="tag static">Two-tower</span>
+                  <span class="tag static">FAISS</span>
+                  <span class="tag static">Query NLP</span>
+                </div>
+                <p class="project-summary">
+                  Shoppers who can’t find products don’t convert. I owned
+                  Zepto’s search relevance path — from classic learning-to-rank
+                  to dense retrieval — so results stay useful under a hard
+                  latency budget.
+                </p>
+                <div class="project-detail" hidden>
+                  <p class="detail-label">Problem</p>
+                  <p>
+                    Zero-result queries and weak ranking leaked GMV. Catalog
+                    search needed personalization and live availability without
+                    blowing p95 latency past 100ms.
+                  </p>
+                  <p class="detail-label">What I built</p>
+                  <ul>
+                    <li>
+                      LightGBM LambdaMART ranking with query understanding,
+                      then a two-tower neural retriever over the catalog.
+                    </li>
+                    <li>
+                      FAISS ANN candidate generation plus a gradient-boosted
+                      re-ranker blending user, cohort, and stock signals.
+                    </li>
+                    <li>
+                      Conversion-aware ranking that balances relevance with
+                      what can actually be fulfilled right now.
+                    </li>
+                  </ul>
+                  <p class="detail-label">Impact</p>
+                  <p>
+                    Search-to-cart rose 14–20%, zero-result queries fell 35%,
+                    NDCG@10 improved ~12%, and search-led GMV lifted 8–12%.
+                  </p>
+                </div>
+                <button type="button" class="read-more" aria-expanded="false">
+                  Read more <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project" data-tags="fraud" tabindex="0">
+              <div
+                class="project-banner"
+                style="--banner: url('assets/banners/banner-tide-fraud.png')"
+              >
+                <div class="banner-overlay banner-overlay-fraud"></div>
+                <div class="banner-top">
+                  <img
+                    class="company-logo"
+                    src="assets/logos/tide.svg"
+                    alt="Tide"
+                    width="88"
+                    height="30"
+                  />
+                  <span class="theme-chip">Fraud Detection</span>
+                </div>
+                <span class="banner-metric">~40% £-recall</span>
+              </div>
+              <div class="project-body">
+                <h3>Acquiring Fraud Detection Platform</h3>
+                <div class="tags compact">
+                  <span class="tag static">Risk Scoring</span>
+                  <span class="tag static">XGBoost</span>
+                  <span class="tag static">Tecton</span>
+                  <span class="tag static">Ops Tradeoffs</span>
+                </div>
+                <p class="project-summary">
+                  Fraud teams don’t care about AUC — they care how much loss
+                  they recover at a fixed review headcount. I reframed Tide’s
+                  acquiring fraud stack around pounds recovered under a hard
+                  alert budget.
+                </p>
+                <div class="project-detail" hidden>
+                  <p class="detail-label">Problem</p>
+                  <p>
+                    Millions of acquiring transactions each month, but only
+                    ~1,000 can be reviewed. Classic ranking metrics pushed the
+                    wrong cases to analysts and left high-£ fraud on the table.
+                  </p>
+                  <p class="detail-label">What I built</p>
+                  <ul>
+                    <li>
+                      A 28-rule engine paired with a calibrated XGBoost model
+                      under a unified 1,000 alerts/month cap.
+                    </li>
+                    <li>
+                      ProductionAlertGate — budget → amount floor →
+                      model/rules — narrowing ~3M candidates to the review set.
+                    </li>
+                    <li>
+                      60+ point-in-time features, leakage fixes, time-series CV,
+                      and a 250→10,000 alerts/month ops tradeoff curve.
+                    </li>
+                  </ul>
+                  <p class="detail-label">Impact</p>
+                  <p>
+                    Captured ~40% of fraud £-value on out-of-time hold-out at
+                    flat ops load; isolated PAYLINK as 55% of chargeback £ in
+                    just 3% of volume.
+                  </p>
+                </div>
+                <button type="button" class="read-more" aria-expanded="false">
+                  Read more <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project" data-tags="marketplace" tabindex="0">
+              <div
+                class="project-banner"
+                style="--banner: url('assets/banners/banner-uber-supply.png')"
+              >
+                <div class="banner-overlay banner-overlay-supply"></div>
+                <div class="banner-top">
+                  <img
+                    class="company-logo"
+                    src="assets/logos/uber.svg"
+                    alt="Uber"
+                    width="88"
+                    height="30"
+                  />
+                  <span class="theme-chip">Supply Lifecycle</span>
+                </div>
+                <span class="banner-metric">86% faster TAT</span>
+              </div>
+              <div class="project-body">
+                <h3>Retriever — Driver Reactivation System</h3>
+                <div class="tags compact">
+                  <span class="tag static">Lifecycle ML</span>
+                  <span class="tag static">Uplift</span>
+                  <span class="tag static">Ensembles</span>
+                  <span class="tag static">Funnel</span>
+                </div>
+                <p class="project-summary">
+                  Inactive drivers are lost supply. I built Retriever to decide
+                  who to win back, how urgently, and with which intervention —
+                  then automated the workflow across a large share of India
+                  South Asia supply.
+                </p>
+                <div class="project-detail" hidden>
+                  <p class="detail-label">Problem</p>
+                  <p>
+                    Reactivation was slow, manual, and uneven. Support volume
+                    stayed high while arrears and idle supply piled up.
+                  </p>
+                  <p class="detail-label">What I built</p>
+                  <ul>
+                    <li>
+                      Gradient-boosting + ensemble scoring to prioritize
+                      reactivation cohorts and automate outreach workflows.
+                    </li>
+                    <li>
+                      Uplift and funnel analytics to lift First Trip conversion
+                      and activation efficiency.
+                    </li>
+                    <li>
+                      Churn and re-engagement models to protect weekly active
+                      driver retention.
+                    </li>
+                  </ul>
+                  <p class="detail-label">Impact</p>
+                  <p>
+                    Rolled out to 35% of regional supply: 86% faster reactivation
+                    TAT, 16% fewer contact inflows, $350–500K annual arrears
+                    savings, +12% First Trip conversion.
+                  </p>
+                </div>
+                <button type="button" class="read-more" aria-expanded="false">
+                  Read more <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="project"
+              data-tags="rl marketplace pricing"
+              tabindex="0"
+            >
+              <div
+                class="project-banner"
+                style="--banner: url('assets/banners/banner-zepto-rl.png')"
+              >
+                <div class="banner-overlay banner-overlay-rl"></div>
+                <div class="banner-top">
+                  <img
+                    class="company-logo"
+                    src="assets/logos/zepto.svg"
+                    alt="Zepto"
+                    width="88"
+                    height="30"
+                  />
+                  <span class="theme-chip">Incentives / RL</span>
+                </div>
+                <span class="banner-metric">+12–18% margin</span>
+              </div>
+              <div class="project-body">
+                <h3>Real-time Discount &amp; Incentive Engine</h3>
+                <div class="tags compact">
+                  <span class="tag static">Constrained PPO</span>
+                  <span class="tag static">DQN</span>
+                  <span class="tag static">Bandits</span>
+                  <span class="tag static">Elasticity</span>
+                </div>
+                <p class="project-summary">
+                  Discounts that chase every click destroy margin. I designed an
+                  RL decision layer that spends incentive budget where
+                  short-term elasticity actually pays back.
+                </p>
+                <div class="project-detail" hidden>
+                  <p class="detail-label">Problem</p>
+                  <p>
+                    Static promo rules over-discounted low-elasticity users and
+                    under-invested where conversion was truly price-sensitive.
+                  </p>
+                  <p class="detail-label">What I built</p>
+                  <ul>
+                    <li>
+                      Constrained PPO / DQN policies for real-time discount and
+                      incentive allocation.
+                    </li>
+                    <li>
+                      Demand-elasticity modeling to trade off engagement vs
+                      contribution margin under budget caps.
+                    </li>
+                  </ul>
+                  <p class="detail-label">Impact</p>
+                  <p>
+                    Contribution margin improved 12–18% while keeping incentive
+                    spend controlled in production decisioning.
+                  </p>
+                </div>
+                <button type="button" class="read-more" aria-expanded="false">
+                  Read more <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project" data-tags="marketplace" tabindex="0">
+              <div
+                class="project-banner"
+                style="--banner: url('assets/banners/banner-iqvia-health.png')"
+              >
+                <div class="banner-overlay banner-overlay-health"></div>
+                <div class="banner-top">
+                  <img
+                    class="company-logo"
+                    src="assets/logos/iqvia.svg"
+                    alt="IQVIA"
+                    width="88"
+                    height="30"
+                  />
+                  <span class="theme-chip">Healthcare Analytics</span>
+                </div>
+                <span class="banner-metric">+37% QoQ sales</span>
+              </div>
+              <div class="project-body">
+                <h3>Physician Targeting on 45M+ Claims</h3>
+                <div class="tags compact">
+                  <span class="tag static">Propensity</span>
+                  <span class="tag static">Uplift</span>
+                  <span class="tag static">GBM</span>
+                  <span class="tag static">AWS Athena</span>
+                </div>
+                <p class="project-summary">
+                  Pharma commercial teams drown in claims noise. I turned 45M+
+                  US patient records into pathway models and high-value HCP
+                  scores so targeting spend followed real opportunity.
+                </p>
+                <div class="project-detail" hidden>
+                  <p class="detail-label">Problem</p>
+                  <p>
+                    Broad HCP lists wasted sales effort. Teams needed who to
+                    call, why, and how treatment journeys actually unfolded for
+                    NMIBC patients.
+                  </p>
+                  <p class="detail-label">What I built</p>
+                  <ul>
+                    <li>
+                      End-to-end ML pipelines on Athena for feature engineering,
+                      cohorts, and models (GBM, logistic, clustering).
+                    </li>
+                    <li>
+                      Propensity and uplift models to rank physicians by
+                      expected commercial impact.
+                    </li>
+                    <li>
+                      Sales &amp; marketing analytics spanning segmentation,
+                      forecasting, and incentive design.
+                    </li>
+                  </ul>
+                  <p class="detail-label">Impact</p>
+                  <p>
+                    High-value physician targeting drove a 37% QoQ sales lift
+                    and ~20% better targeting accuracy.
+                  </p>
+                </div>
+                <button type="button" class="read-more" aria-expanded="false">
+                  Read more <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+          </div>
+          <p class="filter-empty" id="filter-empty" hidden>
+            No projects match this filter. Try another topic.
+          </p>
+        </section>
+
+        <section id="skills" class="section skills-section">
+          <div class="section-head">
+            <h2 class="section-title">Technical skills</h2>
+            <p class="section-sub">
+              Tools I use to ship end-to-end ML — from problem framing to
+              production activation and measurement.
+            </p>
+          </div>
+          <div class="skill-board">
+            <article class="skill-card">
+              <h3>Programming</h3>
+              <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>PySpark</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Machine learning &amp; AI</h3>
+              <ul>
+                <li>XGBoost / LightGBM</li>
+                <li>scikit-learn</li>
+                <li>PyTorch / TensorFlow</li>
+                <li>Constrained PPO / bandits</li>
+                <li>Uplift &amp; ensembles</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Search, ranking &amp; LLMs</h3>
+              <ul>
+                <li>LambdaMART / LTR</li>
+                <li>Two-tower retrieval</li>
+                <li>FAISS / ANN</li>
+                <li>LangChain / Hugging Face</li>
+                <li>RAG / prompt engineering</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Data engineering &amp; MLOps</h3>
+              <ul>
+                <li>Airflow / Spark</li>
+                <li>Snowflake / BigQuery</li>
+                <li>Tecton</li>
+                <li>MLflow / Docker</li>
+                <li>Kubernetes / SageMaker</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Cloud &amp; platforms</h3>
+              <ul>
+                <li>AWS</li>
+                <li>GCP</li>
+                <li>Real-time serving</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Experimentation</h3>
+              <ul>
+                <li>A/B testing</li>
+                <li>Switchback design</li>
+                <li>CUPED</li>
+                <li>Causal inference</li>
+                <li>Hypothesis testing</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Domain expertise</h3>
+              <ul>
+                <li>Dynamic pricing</li>
+                <li>Fraud / risk scoring</li>
+                <li>Marketplace lifecycle</li>
+                <li>Forecasting / inventory</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Visualization</h3>
+              <ul>
+                <li>Tableau</li>
+                <li>Matplotlib / Seaborn</li>
+                <li>Plotly</li>
+              </ul>
+            </article>
+          </div>
+          <p class="skills-github">
+            Open-source &amp; experiments on
+            <a
+              href="https://github.com/SATWIK-1CH"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github.com/SATWIK-1CH</a
+            >
+            — including
+            <a
+              href="https://github.com/SATWIK-1CH/marketplace-genai-search"
+              target="_blank"
+              rel="noopener noreferrer"
+              >marketplace-genai-search</a
+            >,
+            <a
+              href="https://github.com/SATWIK-1CH/dynamic_pricing_engine"
+              target="_blank"
+              rel="noopener noreferrer"
+              >dynamic_pricing_engine</a
+            >, and
+            <a
+              href="https://github.com/SATWIK-1CH/Agents-AB-Experimentation"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Agents-AB-Experimentation</a
+            >.
+          </p>
+        </section>
+
+        <section id="experience" class="section">
+          <h2 class="section-title">Experience</h2>
+          <ol class="experience-list">
+            <li class="exp">
+              <div class="exp-dates">May 2026 – Present</div>
+              <div class="exp-content">
+                <div class="exp-heading">
+                  <img class="exp-logo" src="assets/logos/bolt.svg" alt="" width="72" height="24" />
+                  <h3>Senior Data Scientist — Pricing <span>at Bolt</span></h3>
+                </div>
+                <p>
+                  Own conversion and price-elasticity models across 5+ markets;
+                  experimentation with switchback / CUPED; production robustness
+                  for discount budget controls.
+                </p>
+                <div class="tags compact">
+                  <span class="tag static">XGBoost</span>
+                  <span class="tag static">Pricing</span>
+                  <span class="tag static">Experimentation</span>
+                </div>
+              </div>
+            </li>
+            <li class="exp">
+              <div class="exp-dates">Jan 2026 – Apr 2026</div>
+              <div class="exp-content">
+                <div class="exp-heading">
+                  <img class="exp-logo" src="assets/logos/tide.svg" alt="" width="72" height="24" />
+                  <h3>Data Scientist 3 <span>at Tide</span></h3>
+                </div>
+                <p>
+                  Production acquiring-fraud platform: value-recall-at-capacity
+                  objective, real-time gating, point-in-time features, and ops
+                  tradeoff tooling.
+                </p>
+                <div class="tags compact">
+                  <span class="tag static">Fraud</span>
+                  <span class="tag static">XGBoost</span>
+                  <span class="tag static">Tecton</span>
+                </div>
+              </div>
+            </li>
+            <li class="exp">
+              <div class="exp-dates">Jul 2024 – Dec 2025</div>
+              <div class="exp-content">
+                <div class="exp-heading">
+                  <img class="exp-logo" src="assets/logos/zepto.svg" alt="" width="72" height="24" />
+                  <h3>Senior Data Scientist <span>at Zepto</span></h3>
+                </div>
+                <p>
+                  Search ranking &amp; retrieval, personalized recommendations,
+                  RL incentives, and forecasting-powered replenishment for a
+                  high-scale quick-commerce marketplace.
+                </p>
+                <div class="tags compact">
+                  <span class="tag static">LTR</span>
+                  <span class="tag static">FAISS</span>
+                  <span class="tag static">PySpark</span>
+                  <span class="tag static">RL</span>
+                </div>
+              </div>
+            </li>
+            <li class="exp">
+              <div class="exp-dates">Nov 2022 – Jul 2024</div>
+              <div class="exp-content">
+                <div class="exp-heading">
+                  <img class="exp-logo" src="assets/logos/uber.svg" alt="" width="72" height="24" />
+                  <h3>Senior Data Scientist <span>at Uber</span></h3>
+                </div>
+                <p>
+                  Marketplace supply lifecycle — reactivation, activation,
+                  churn — plus fulfillment KPI optimization across India South
+                  Asia.
+                </p>
+                <div class="tags compact">
+                  <span class="tag static">Lifecycle</span>
+                  <span class="tag static">Uplift</span>
+                  <span class="tag static">Ensembles</span>
+                </div>
+              </div>
+            </li>
+            <li class="exp">
+              <div class="exp-dates">Aug 2021 – Nov 2022</div>
+              <div class="exp-content">
+                <div class="exp-heading">
+                  <img class="exp-logo" src="assets/logos/iqvia.svg" alt="" width="72" height="24" />
+                  <h3>Data Scientist <span>at IQVIA</span></h3>
+                </div>
+                <p>
+                  Healthcare analytics on large claims datasets: pathway
+                  prediction, physician targeting, and sales &amp; marketing
+                  modeling.
+                </p>
+                <div class="tags compact">
+                  <span class="tag static">GBM</span>
+                  <span class="tag static">AWS</span>
+                  <span class="tag static">Propensity</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section id="education" class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="edu">
+            <div class="exp-dates">2017 – 2021</div>
+            <div>
+              <h3>B.Tech, Electrical Engineering</h3>
+              <p>National Institute of Technology, Rourkela</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Satwik Cheppala · Built for recruiters</p>
+          <div class="footer-links">
+            <a
+              href="https://github.com/SATWIK-1CH"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a href="mailto:ch.satwik465@gmail.com">ch.satwik465@gmail.com</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close profile">×</button>
+      <div class="drawer-content" id="drawer-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
